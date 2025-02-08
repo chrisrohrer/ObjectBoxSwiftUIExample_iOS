@@ -25,7 +25,7 @@ A sample iOS app demonstrating **ObjectBox** integration with **SwiftUI**. This 
     Pods/ObjectBox/setup.rb
    ```
 
-3. **Open the Xcode workspace:**  
+3. **Open the Xcode workspace:** (not .xcodeproj)
    ```sh
    open ObjectBoxSwiftUIExample_iOS.xcworkspace
    ```
