@@ -176,9 +176,10 @@ extension Book: ObjectBox.EntityInspectable {
         try entityBuilder.addProperty(name: "id", type: PropertyType.long, flags: [.id], id: 1, uid: 8877933408472149504)
         try entityBuilder.addProperty(name: "title", type: PropertyType.string, id: 2, uid: 4910967368332728576)
         try entityBuilder.addProperty(name: "pages", type: PropertyType.long, id: 3, uid: 2191607194936706048)
+        try entityBuilder.addProperty(name: "notes", type: PropertyType.string, id: 5, uid: 3972041113281408000)
         try entityBuilder.addToOneRelation(name: "author", targetEntityInfo: ToOne<Author>.Target.entityInfo, flags: [.indexed, .indexPartialSkipZero], id: 4, uid: 9103113556602629632, indexId: 1, indexUid: 8756300908021427968)
 
-        try entityBuilder.lastProperty(id: 4, uid: 9103113556602629632)
+        try entityBuilder.lastProperty(id: 5, uid: 3972041113281408000)
     }
 }
 
@@ -201,6 +202,12 @@ extension Book {
     ///
     ///     box.query { Book.pages > 1234 }
     internal static var pages: Property<Book, Int, Void> { return Property<Book, Int, Void>(propertyId: 3, isPrimaryKey: false) }
+    /// Generated entity property information.
+    ///
+    /// You may want to use this in queries to specify fetch conditions, for example:
+    ///
+    ///     box.query { Book.notes.startsWith("X") }
+    internal static var notes: Property<Book, String, Void> { return Property<Book, String, Void>(propertyId: 5, isPrimaryKey: false) }
     internal static var author: Property<Book, EntityId<ToOne<Author>.Target>, ToOne<Author>.Target> { return Property(propertyId: 4) }
 
 
@@ -234,6 +241,14 @@ extension ObjectBox.Property where E == Book {
 
     internal static var pages: Property<Book, Int, Void> { return Property<Book, Int, Void>(propertyId: 3, isPrimaryKey: false) }
 
+    /// Generated entity property information.
+    ///
+    /// You may want to use this in queries to specify fetch conditions, for example:
+    ///
+    ///     box.query { .notes.startsWith("X") }
+
+    internal static var notes: Property<Book, String, Void> { return Property<Book, String, Void>(propertyId: 5, isPrimaryKey: false) }
+
     internal static var author: Property<Book, ToOne<Author>.Target.EntityBindingType.IdType, ToOne<Author>.Target> { return Property<Book, ToOne<Author>.Target.EntityBindingType.IdType, ToOne<Author>.Target>(propertyId: 4) }
 
 }
@@ -259,11 +274,13 @@ internal class BookBinding: ObjectBox.EntityBinding {
     internal func collect(fromEntity entity: EntityType, id: ObjectBox.Id,
                                   propertyCollector: ObjectBox.FlatBufferBuilder, store: ObjectBox.Store) throws {
         let propertyOffset_title = propertyCollector.prepare(string: entity.title)
+        let propertyOffset_notes = propertyCollector.prepare(string: entity.notes)
 
         propertyCollector.collect(id, at: 2 + 2 * 1)
         propertyCollector.collect(entity.pages, at: 2 + 2 * 3)
         try propertyCollector.collect(entity.author, at: 2 + 2 * 4, store: store)
         propertyCollector.collect(dataOffset: propertyOffset_title, at: 2 + 2 * 2)
+        propertyCollector.collect(dataOffset: propertyOffset_notes, at: 2 + 2 * 5)
     }
 
     internal func postPut(fromEntity entity: EntityType, id: ObjectBox.Id, store: ObjectBox.Store) throws {
@@ -285,6 +302,7 @@ internal class BookBinding: ObjectBox.EntityBinding {
         entity.id = entityReader.read(at: 2 + 2 * 1)
         entity.title = entityReader.read(at: 2 + 2 * 2)
         entity.pages = entityReader.read(at: 2 + 2 * 3)
+        entity.notes = entityReader.read(at: 2 + 2 * 5)
 
         entity.author = entityReader.read(at: 2 + 2 * 4, store: store)
         return entity

@@ -27,6 +27,7 @@
 		C6FEF88F2D5780C700992A9F /* AppStorage extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF87E2D5780C700992A9F /* AppStorage extensions.swift */; };
 		C6FEF8902D5780C700992A9F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8772D5780C700992A9F /* BooksView.swift */; };
 		C6FEF8912D5780C700992A9F /* NewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF87F2D5780C700992A9F /* NewSheet.swift */; };
+		C6FEF8932D57938600992A9F /* model-ObjectBoxSwiftUIExample_iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = C6FEF8922D57938600992A9F /* model-ObjectBoxSwiftUIExample_iOS.json */; };
 		CFFD6D4A5E3118DDAD82E594 /* Pods_ObjectBoxSwiftUIExample_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDF6FD0C2580E9A1901E756 /* Pods_ObjectBoxSwiftUIExample_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		C6FEF87E2D5780C700992A9F /* AppStorage extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorage extensions.swift"; sourceTree = "<group>"; };
 		C6FEF87F2D5780C700992A9F /* NewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSheet.swift; sourceTree = "<group>"; };
 		C6FEF8802D5780C700992A9F /* Array ID Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array ID Index.swift"; sourceTree = "<group>"; };
+		C6FEF8922D57938600992A9F /* model-ObjectBoxSwiftUIExample_iOS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "model-ObjectBoxSwiftUIExample_iOS.json"; sourceTree = SOURCE_ROOT; };
 		E7A55EA032D4472AE97ACB51 /* Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig"; path = "Target Support Files/Pods-ObjectBoxSwiftUIExample_iOS/Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ECDF6FD0C2580E9A1901E756 /* Pods_ObjectBoxSwiftUIExample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectBoxSwiftUIExample_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 		6E575E009EDC604186AB4F5F /* generated */ = {
 			isa = PBXGroup;
 			children = (
+				C6FEF8922D57938600992A9F /* model-ObjectBoxSwiftUIExample_iOS.json */,
 				7645FEF63A8BE533DBF9E662 /* EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift */,
 			);
 			path = generated;
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FEF86B2D577FAE00992A9F /* Preview Assets.xcassets in Resources */,
+				C6FEF8932D57938600992A9F /* model-ObjectBoxSwiftUIExample_iOS.json in Resources */,
 				C6FEF86C2D577FAE00992A9F /* Assets.xcassets in Resources */,
 				C6FEF8822D5780C700992A9F /* model-ObjectBoxTest.json in Resources */,
 			);

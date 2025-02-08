@@ -21,7 +21,7 @@ struct AuthorDetails: View {
             TextField("Name", text: $author.name)
             TextField("Birthyear", value: $author.birthyear, format: .number.grouping(.never))
             
-            Section("Books") {
+            Section("^[\(author.books.count) Book](inflect: true)") {
                 if booksLoaded {
                     
                     List(author.books.sorted { $0.title < $1.title }) { book in

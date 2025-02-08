@@ -30,6 +30,8 @@ struct BookDetails: View {
                     Text(author.name).tag(author as Author?)
                 }
             }
+            
+            TextEditor(text: $book.notes)
         }
         .navigationTitle(book.title)
         

@@ -71,9 +71,9 @@ struct BooksView: View {
                 Text(book.title)
                     .font(.headline)
                 Text(book.author.target?.name ?? "unbekannt")
-                Text(book.pages.formatted())
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+//                Text(book.pages.formatted())
+//                    .font(.caption)
+//                    .foregroundStyle(.secondary)
             }
     }
 

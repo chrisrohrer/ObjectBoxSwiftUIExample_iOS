@@ -15,7 +15,8 @@ class Book: Identifiable {
 
     var title: String = ""
     var pages: Int = 0
-    
+    var notes: String = ""
+
     var author: ToOne<Author> = nil
     
     
