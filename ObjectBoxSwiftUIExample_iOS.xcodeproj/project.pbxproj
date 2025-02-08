@@ -3,37 +3,105 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
-/* Begin PBXFileReference section */
-		C6FEF8522D577FA400992A9F /* ObjectBoxSwiftUIExample_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectBoxSwiftUIExample_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		3C42AC21B9F1ECC9980B5A0C /* EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7645FEF63A8BE533DBF9E662 /* EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift */; };
+		C6FEF86A2D577FAE00992A9F /* ObjectBoxSwiftUIExample_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8672D577FAE00992A9F /* ObjectBoxSwiftUIExample_iOSApp.swift */; };
+		C6FEF86B2D577FAE00992A9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FEF8632D577FAE00992A9F /* Preview Assets.xcassets */; };
+		C6FEF86C2D577FAE00992A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FEF8652D577FAE00992A9F /* Assets.xcassets */; };
+		C6FEF8822D5780C700992A9F /* model-ObjectBoxTest.json in Resources */ = {isa = PBXBuildFile; fileRef = C6FEF8732D5780C700992A9F /* model-ObjectBoxTest.json */; };
+		C6FEF8832D5780C700992A9F /* ObjectBoxHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF86D2D5780C700992A9F /* ObjectBoxHelpers.swift */; };
+		C6FEF8842D5780C700992A9F /* NewAuthorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF87B2D5780C700992A9F /* NewAuthorSheet.swift */; };
+		C6FEF8852D5780C700992A9F /* BookDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8792D5780C700992A9F /* BookDetails.swift */; };
+		C6FEF8862D5780C700992A9F /* AuthorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8782D5780C700992A9F /* AuthorDetails.swift */; };
+		C6FEF8872D5780C700992A9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8752D5780C700992A9F /* ContentView.swift */; };
+		C6FEF8882D5780C700992A9F /* NewBookSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF87C2D5780C700992A9F /* NewBookSheet.swift */; };
+		C6FEF8892D5780C700992A9F /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8712D5780C700992A9F /* Author.swift */; };
+		C6FEF88A2D5780C700992A9F /* AuthorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8762D5780C700992A9F /* AuthorsView.swift */; };
+		C6FEF88B2D5780C700992A9F /* ObservedResults Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF86E2D5780C700992A9F /* ObservedResults Wrapper.swift */; };
+		C6FEF88C2D5780C700992A9F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8722D5780C700992A9F /* Book.swift */; };
+		C6FEF88D2D5780C700992A9F /* Array ID Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8802D5780C700992A9F /* Array ID Index.swift */; };
+		C6FEF88E2D5780C700992A9F /* ObservedModel Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF86F2D5780C700992A9F /* ObservedModel Wrapper.swift */; };
+		C6FEF88F2D5780C700992A9F /* AppStorage extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF87E2D5780C700992A9F /* AppStorage extensions.swift */; };
+		C6FEF8902D5780C700992A9F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF8772D5780C700992A9F /* BooksView.swift */; };
+		C6FEF8912D5780C700992A9F /* NewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEF87F2D5780C700992A9F /* NewSheet.swift */; };
+		CFFD6D4A5E3118DDAD82E594 /* Pods_ObjectBoxSwiftUIExample_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDF6FD0C2580E9A1901E756 /* Pods_ObjectBoxSwiftUIExample_iOS.framework */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C6FEF8542D577FA400992A9F /* ObjectBoxSwiftUIExample_iOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ObjectBoxSwiftUIExample_iOS;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		196706644D5CCB579FD4400E /* Pods-ObjectBoxSwiftUIExample_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectBoxSwiftUIExample_iOS.debug.xcconfig"; path = "Target Support Files/Pods-ObjectBoxSwiftUIExample_iOS/Pods-ObjectBoxSwiftUIExample_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7645FEF63A8BE533DBF9E662 /* EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift"; sourceTree = "<group>"; };
+		C6FEF8522D577FA400992A9F /* ObjectBoxSwiftUIExample_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectBoxSwiftUIExample_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FEF8632D577FAE00992A9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6FEF8652D577FAE00992A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6FEF8672D577FAE00992A9F /* ObjectBoxSwiftUIExample_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectBoxSwiftUIExample_iOSApp.swift; sourceTree = "<group>"; };
+		C6FEF86D2D5780C700992A9F /* ObjectBoxHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectBoxHelpers.swift; sourceTree = "<group>"; };
+		C6FEF86E2D5780C700992A9F /* ObservedResults Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservedResults Wrapper.swift"; sourceTree = "<group>"; };
+		C6FEF86F2D5780C700992A9F /* ObservedModel Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservedModel Wrapper.swift"; sourceTree = "<group>"; };
+		C6FEF8712D5780C700992A9F /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		C6FEF8722D5780C700992A9F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C6FEF8732D5780C700992A9F /* model-ObjectBoxTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "model-ObjectBoxTest.json"; path = "../ObjectBoxTest/model-ObjectBoxTest.json"; sourceTree = SOURCE_ROOT; };
+		C6FEF8752D5780C700992A9F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6FEF8762D5780C700992A9F /* AuthorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsView.swift; sourceTree = "<group>"; };
+		C6FEF8772D5780C700992A9F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		C6FEF8782D5780C700992A9F /* AuthorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetails.swift; sourceTree = "<group>"; };
+		C6FEF8792D5780C700992A9F /* BookDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetails.swift; sourceTree = "<group>"; };
+		C6FEF87B2D5780C700992A9F /* NewAuthorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAuthorSheet.swift; sourceTree = "<group>"; };
+		C6FEF87C2D5780C700992A9F /* NewBookSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookSheet.swift; sourceTree = "<group>"; };
+		C6FEF87E2D5780C700992A9F /* AppStorage extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorage extensions.swift"; sourceTree = "<group>"; };
+		C6FEF87F2D5780C700992A9F /* NewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSheet.swift; sourceTree = "<group>"; };
+		C6FEF8802D5780C700992A9F /* Array ID Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array ID Index.swift"; sourceTree = "<group>"; };
+		E7A55EA032D4472AE97ACB51 /* Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig"; path = "Target Support Files/Pods-ObjectBoxSwiftUIExample_iOS/Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		ECDF6FD0C2580E9A1901E756 /* Pods_ObjectBoxSwiftUIExample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectBoxSwiftUIExample_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C6FEF84F2D577FA400992A9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFD6D4A5E3118DDAD82E594 /* Pods_ObjectBoxSwiftUIExample_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E575E009EDC604186AB4F5F /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				7645FEF63A8BE533DBF9E662 /* EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
+		9E11B228BEA6D54B1281A467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECDF6FD0C2580E9A1901E756 /* Pods_ObjectBoxSwiftUIExample_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E35B19608F8898E7BBF69DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				196706644D5CCB579FD4400E /* Pods-ObjectBoxSwiftUIExample_iOS.debug.xcconfig */,
+				E7A55EA032D4472AE97ACB51 /* Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6FEF8492D577FA400992A9F = {
 			isa = PBXGroup;
 			children = (
-				C6FEF8542D577FA400992A9F /* ObjectBoxSwiftUIExample_iOS */,
+				C6FEF8682D577FAE00992A9F /* ObjectBoxSwiftUIExample_iOS */,
+				6E575E009EDC604186AB4F5F /* generated */,
 				C6FEF8532D577FA400992A9F /* Products */,
+				9E35B19608F8898E7BBF69DB /* Pods */,
+				9E11B228BEA6D54B1281A467 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +113,80 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C6FEF8642D577FAE00992A9F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6FEF8632D577FAE00992A9F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6FEF8682D577FAE00992A9F /* ObjectBoxSwiftUIExample_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C6FEF8672D577FAE00992A9F /* ObjectBoxSwiftUIExample_iOSApp.swift */,
+				C6FEF8702D5780C700992A9F /* ObjectBox */,
+				C6FEF8742D5780C700992A9F /* Model */,
+				C6FEF87A2D5780C700992A9F /* Views */,
+				C6FEF87D2D5780C700992A9F /* Sheets */,
+				C6FEF8812D5780C700992A9F /* Helpers */,
+				C6FEF8642D577FAE00992A9F /* Preview Content */,
+				C6FEF8652D577FAE00992A9F /* Assets.xcassets */,
+			);
+			path = ObjectBoxSwiftUIExample_iOS;
+			sourceTree = "<group>";
+		};
+		C6FEF8702D5780C700992A9F /* ObjectBox */ = {
+			isa = PBXGroup;
+			children = (
+				C6FEF86D2D5780C700992A9F /* ObjectBoxHelpers.swift */,
+				C6FEF86E2D5780C700992A9F /* ObservedResults Wrapper.swift */,
+				C6FEF86F2D5780C700992A9F /* ObservedModel Wrapper.swift */,
+			);
+			path = ObjectBox;
+			sourceTree = "<group>";
+		};
+		C6FEF8742D5780C700992A9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6FEF8712D5780C700992A9F /* Author.swift */,
+				C6FEF8722D5780C700992A9F /* Book.swift */,
+				C6FEF8732D5780C700992A9F /* model-ObjectBoxTest.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6FEF87A2D5780C700992A9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6FEF8752D5780C700992A9F /* ContentView.swift */,
+				C6FEF8762D5780C700992A9F /* AuthorsView.swift */,
+				C6FEF8772D5780C700992A9F /* BooksView.swift */,
+				C6FEF8782D5780C700992A9F /* AuthorDetails.swift */,
+				C6FEF8792D5780C700992A9F /* BookDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6FEF87D2D5780C700992A9F /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				C6FEF87B2D5780C700992A9F /* NewAuthorSheet.swift */,
+				C6FEF87C2D5780C700992A9F /* NewBookSheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		C6FEF8812D5780C700992A9F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6FEF87E2D5780C700992A9F /* AppStorage extensions.swift */,
+				C6FEF87F2D5780C700992A9F /* NewSheet.swift */,
+				C6FEF8802D5780C700992A9F /* Array ID Index.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,20 +194,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6FEF8602D577FA500992A9F /* Build configuration list for PBXNativeTarget "ObjectBoxSwiftUIExample_iOS" */;
 			buildPhases = (
+				336E10DDF34E244B300FE4C5 /* [CP] Check Pods Manifest.lock */,
+				26F88980AEDA51D3B7D01D0F /* [OBX] Update Sourcery Generated Files */,
 				C6FEF84E2D577FA400992A9F /* Sources */,
 				C6FEF84F2D577FA400992A9F /* Frameworks */,
 				C6FEF8502D577FA400992A9F /* Resources */,
+				4F6649C8FFCBE476523EE712 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				C6FEF8542D577FA400992A9F /* ObjectBoxSwiftUIExample_iOS */,
-			);
 			name = ObjectBoxSwiftUIExample_iOS;
-			packageProductDependencies = (
-			);
 			productName = ObjectBoxSwiftUIExample_iOS;
 			productReference = C6FEF8522D577FA400992A9F /* ObjectBoxSwiftUIExample_iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -86,6 +226,7 @@
 				};
 			};
 			buildConfigurationList = C6FEF84D2D577FA400992A9F /* Build configuration list for PBXProject "ObjectBoxSwiftUIExample_iOS" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,8 +234,6 @@
 				Base,
 			);
 			mainGroup = C6FEF8492D577FA400992A9F;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = C6FEF8532D577FA400992A9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,16 +248,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FEF86B2D577FAE00992A9F /* Preview Assets.xcassets in Resources */,
+				C6FEF86C2D577FAE00992A9F /* Assets.xcassets in Resources */,
+				C6FEF8822D5780C700992A9F /* model-ObjectBoxTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26F88980AEDA51D3B7D01D0F /* [OBX] Update Sourcery Generated Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[OBX] Update Sourcery Generated Files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/ObjectBox/generate_sources.sh\" -- --output \"$PROJECT_DIR/generated/EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift\" --model-json \"$PROJECT_DIR/model-ObjectBoxSwiftUIExample_iOS.json\"\n";
+		};
+		336E10DDF34E244B300FE4C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectBoxSwiftUIExample_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F6649C8FFCBE476523EE712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectBoxSwiftUIExample_iOS/Pods-ObjectBoxSwiftUIExample_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectBoxSwiftUIExample_iOS/Pods-ObjectBoxSwiftUIExample_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjectBoxSwiftUIExample_iOS/Pods-ObjectBoxSwiftUIExample_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6FEF84E2D577FA400992A9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FEF86A2D577FAE00992A9F /* ObjectBoxSwiftUIExample_iOSApp.swift in Sources */,
+				C6FEF8832D5780C700992A9F /* ObjectBoxHelpers.swift in Sources */,
+				C6FEF8842D5780C700992A9F /* NewAuthorSheet.swift in Sources */,
+				C6FEF8852D5780C700992A9F /* BookDetails.swift in Sources */,
+				C6FEF8862D5780C700992A9F /* AuthorDetails.swift in Sources */,
+				C6FEF8872D5780C700992A9F /* ContentView.swift in Sources */,
+				C6FEF8882D5780C700992A9F /* NewBookSheet.swift in Sources */,
+				C6FEF8892D5780C700992A9F /* Author.swift in Sources */,
+				C6FEF88A2D5780C700992A9F /* AuthorsView.swift in Sources */,
+				C6FEF88B2D5780C700992A9F /* ObservedResults Wrapper.swift in Sources */,
+				C6FEF88C2D5780C700992A9F /* Book.swift in Sources */,
+				C6FEF88D2D5780C700992A9F /* Array ID Index.swift in Sources */,
+				C6FEF88E2D5780C700992A9F /* ObservedModel Wrapper.swift in Sources */,
+				C6FEF88F2D5780C700992A9F /* AppStorage extensions.swift in Sources */,
+				C6FEF8902D5780C700992A9F /* BooksView.swift in Sources */,
+				C6FEF8912D5780C700992A9F /* NewSheet.swift in Sources */,
+				3C42AC21B9F1ECC9980B5A0C /* EntityInfo-ObjectBoxSwiftUIExample_iOS.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +466,7 @@
 		};
 		C6FEF8612D577FA500992A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196706644D5CCB579FD4400E /* Pods-ObjectBoxSwiftUIExample_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -254,6 +475,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ObjectBoxSwiftUIExample_iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = TFWZ5CV5G4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -275,6 +497,7 @@
 		};
 		C6FEF8622D577FA500992A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A55EA032D4472AE97ACB51 /* Pods-ObjectBoxSwiftUIExample_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -283,6 +506,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ObjectBoxSwiftUIExample_iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = TFWZ5CV5G4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

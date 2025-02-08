@@ -1,0 +1,6 @@
+framework module Pods_ObjectBoxSwiftUIExample_iOS {
+  umbrella header "Pods-ObjectBoxSwiftUIExample_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
